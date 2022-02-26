@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+// import Datatable from "./datatable"
+import Transaction from "../Pages/transaction"
+
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+        <Transaction />
       </div>
     );
   }
