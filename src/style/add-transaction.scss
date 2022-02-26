@@ -1,0 +1,42 @@
+.add-transaction-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background: $darkGrey;
+    border-radius: 10px;
+
+    .add-transaction-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        height: 200px;
+        width: 100%;
+
+        .transaction-input {
+            height: 30px;
+            width: 300px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+            &::placeholder {
+                color: black;
+            }
+        }
+    }
+
+    button {
+        background-color: $lightGrey;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        height: 40px;
+        width: 70px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+}
