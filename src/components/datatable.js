@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import { useTable } from 'react-table';
 
-require("es6-promise").polyfill();
-require("isomorphic-fetch");
+// require("es6-promise").polyfill();
+// require("isomorphic-fetch");
 
 export default function TransactionTable() {
 

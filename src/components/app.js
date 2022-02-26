@@ -1,20 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import { useRoutes } from 'hookrouter';
 
-import Insights from "../Insights/insights";
-import AddTransaction from './addTransaction';
-import Transaction from "../Pages/transaction";
 import NavigationContainer from "./navigation/navigation-container";
+import routes from "./navigation/routes";
 
+export default function App() {
+  const routeResult = useRoutes(routes);
 
-export default class App extends Component {
-  render() {
     return (
       <div className='app'>
-        <Transaction />
-        <AddTransaction />
-        <Insights />
-        <NavigationContainer/>
+        <NavigationContainer />
+        {routeResult}
       </div>
     );
-  }
 }

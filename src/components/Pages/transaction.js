@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TransactionTable from "../components/datatable"
+import TransactionTable from "../datatable";
 
 
 

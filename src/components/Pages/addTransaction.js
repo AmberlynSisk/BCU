@@ -12,21 +12,23 @@ export default function AddTransaction(props) {
         axios
             .post("http://127.0.0.1:5000/transactions/add", 
             {
-                date,
-                description,
-                category,
-                amount,
-                type
+                date: date,
+                description: description,
+                category: category,
+                amount: amount,
+                type: type
             }
-            ).then(response => {
+            ).then((response) => {
                 console.log("Success", response);
               })
-              .catch(error => {
+              .catch((error) => {
                 console.log("error", error);
               });
     }
 
     return (
+
+        <div>
         <form className="add-transaction-wrapper" onSubmit={handleSubmit}>
             <h1 className="add-transaction-title">
                 ADD A TRANSACTION:
@@ -55,5 +57,8 @@ export default function AddTransaction(props) {
                 <button type="submit">Add</button>
             </div>
         </form>
+        </div>
+
+
     );
 }

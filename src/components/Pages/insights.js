@@ -3,7 +3,7 @@ import { PieChart, Pie } from "recharts";
 
 //delete me
 
-const App = () => {
+const Insights = () => {
   const data = [
     { name: "Income", students: 400 },
     { name: "Entertainment", students: 700 },
@@ -22,4 +22,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Insights;
