@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import AddTransaction from './addTransaction';
+import React, { Component } from "react";
 
-// import Datatable from "./datatable"
+import Insights from "../Insights/insights";
+import AddTransaction from './addTransaction';
 import Transaction from "../Pages/transaction"
 
 export default class App extends Component {
@@ -10,6 +10,8 @@ export default class App extends Component {
       <div className='app'>
         <Transaction />
         <AddTransaction />
+        <Insights />
+
       </div>
     );
   }
