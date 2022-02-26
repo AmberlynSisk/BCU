@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 import Insights from "../Insights/insights";
 import AddTransaction from './addTransaction';
-import Transaction from "../Pages/transaction"
+import Transaction from "../Pages/transaction";
+import NavigationContainer from "./navigation/navigation-container";
+
 
 export default class App extends Component {
   render() {
@@ -11,7 +13,7 @@ export default class App extends Component {
         <Transaction />
         <AddTransaction />
         <Insights />
-
+        <NavigationContainer/>
       </div>
     );
   }

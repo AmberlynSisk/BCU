@@ -1,0 +1,29 @@
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-wrapper> .middle> .nav-link-wrapper {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+// * {
+
+// }
+
+// body {
+//   margin: 0;
+// }
+
+// .nav {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 250px;
+//   height: 100%;
+//   background: blue;
+// }
